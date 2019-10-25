@@ -2,7 +2,7 @@ body
 {
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #f2f2f2;
     font-family: 'Montserrat', sans-serif;
     max-width: 100%;
     overflow-x: hidden;
@@ -149,7 +149,7 @@ a:hover
 
 
 .banner {
-    background-color: white;
+    background-color: #f2f2f2;
     padding-top: 10em;
     padding-bottom: 14em;
     width: 95%;
