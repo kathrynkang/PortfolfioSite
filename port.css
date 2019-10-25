@@ -4,6 +4,8 @@ body
     padding: 0;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -175,6 +177,7 @@ h1 {
     padding: 0;
     display: block;
     margin-right: 20px;
+    margin-top: 20px;
     
 }
 h2 {
