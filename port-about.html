@@ -3,7 +3,7 @@
     <head>
         <title>Kathryn Kang</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-grid-only@1.0.0/bootstrap.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
@@ -12,27 +12,33 @@
         
     </head>
     
-     <body>
-        <nav role="navigation">
-  <div id="menuToggle">
-    <input type="checkbox" />
-    
-<!--    /* thesee are the hamburger menu*/   -->
-      
-    <span></span>
-    <span></span>
-    <span></span>
-    
-    <ul id="menu">
-      <a href="index.html"><li>Home</li></a>
-      <a href="port-about.html"><li>Bio</li></a>
-      <a href="port-portfolio.html"><li>Work</li></a>
+<body>
+        <a href="index.html"><img src="devlogo.png" class="logo">
+<nav>
+    <ul class="topnav" id="dropclick">
+        <li class="hiddenli"><a href="#">Yo</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="port-portfolio.html">Work</a></li>
+        <li class="dropdown"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
     </ul>
-  </div>
-    <a href="index.html"><img src="logo.png" class="logo"></a>   
+
 </nav>
+
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropclick");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                    /*change topnav to topnav.responsive*/
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
         
-<div class="container">
+<section class="urmom">
+    <div class="container">
   <div class="row">
     <div class="col-sm-4">
       <img src="woman.png" class="woman">
@@ -44,8 +50,10 @@
     </div>
   </div>
 </div>
+</section>        
 
 <a href="https://www.linkedin.com/in/kathryn-kang/" target="blank"><img src="linkedin.png" class="linkedin"></a>
     
     </body>
+    
 </html>

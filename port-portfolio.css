@@ -8,144 +8,144 @@ body
     overflow-x: hidden;
 }
 
-a
-{
+img.logo {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+nav {
+    display: block;
+    width: 100%;
+}
+ul.topnav li a {
   text-decoration: none;
-  color: white;
-  transition: color 0.3s ease;
-}
-
-a:hover
-{
-  color: #7aa3cc;
-    text-decoration: none;
-}
-
-#menuToggle
-{
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -8px;
-  left: -6px;
-  cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  color: #485058;
+  font-weight: 700;
   
-  -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
-#menuToggle span
+ul.topnav li a:hover
 {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background-color: #485058;
-  border-radius: 3px;
-  z-index: 2;
-  cursor: pointer;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+    color: #7aa3cc;
+    transition: color 0.3s ease;
 }
 
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
+ul {
+    margin-right: 30px;
+    margin-top: 20px;
+    display: block;
+    float: right;
+    
+    
 }
 
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
+ul.topnav li {
+    list-style: none;
+    margin: 20px;
+    font-size: 17px;
+    float: left;
 }
 
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: white;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background: #343d46;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-    padding: 10px 0;
-    font-size: 22px;
-    font-weight: 700;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
+ul li.hiddenli {
+    opacity: 0;
+    cursor: default;
 }
 
 
+ul.topnav li.dropdown {
+    display: none;
+    font-size: 25px;
+}
+
+
+/*############ Mobile ############## */
+@media screen and (max-width: 768px) {
+    ul.topnav li:not(:nth-child(0)) {
+        display: none;
+    }
+    
+    ul.topnav li.dropdown {
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdown {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+        background-color: white;
+        width: 100%;
+    }
+    
+    ul.topnav.responsive li {
+        display: inline; 
+        float: none;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+    
+
+    ul.topnav.responsive li.hiddenli a {
+        opacity: 0;
+        cursor: default;
+    }
+    
+    nav ul {
+    opacity: 0.75;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    }
+
+    ul.topnav li {
+    list-style: none;
+    float: left;
+    }
+
+    ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 15px;
+    padding: 10px;
+    color: black;
+    }
+    
+    ul.topnav li a:hover {
+    color: #7aa3cc;
+    }
+    
+    a:hover {
+        color: blue;
+    }
+    
+    img.woman {
+        margin-top: -5em;
+    }
+
+    
+}
+
+/* end of mobile!!! */
+
+.urmom2 {
+    padding-top: 13.5em;
+}
 h1 {
     font-size: 50px;
     text-align: center;
     margin: 10px;
-    margin-top: 2em;
+    margin-top: -2em;
     padding-bottom: 1em;
     font-weight: 700;
     color: #485058;

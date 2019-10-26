@@ -4,140 +4,143 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
+
+img.logo {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+nav {
+    display: block;
+    width: 100%;
+}
+ul.topnav li a {
+  text-decoration: none;
+  color: #485058;
+  font-weight: 700;
+  
+}
+
+ul.topnav li a:hover
+{
+    color: #7aa3cc;
     transition: color 0.3s ease;
-    font-family: 'Montserrat', sans-serif;
 }
 
-a:hover
-{
-  color: #7aa3cc;
+ul {
+    margin-right: 30px;
+    margin-top: 20px;
+    display: block;
+    float: right;
+    
+    
+}
+
+ul.topnav li {
+    list-style: none;
+    margin: 20px;
+    font-size: 17px;
+    float: left;
+}
+
+ul li.hiddenli {
+    opacity: 0;
+    cursor: default;
+}
+
+
+ul.topnav li.dropdown {
+    display: none;
+    font-size: 25px;
+}
+
+
+/*############ Mobile ############## */
+@media screen and (max-width: 768px) {
+    ul.topnav li:not(:nth-child(0)) {
+        display: none;
+    }
+    
+    ul.topnav li.dropdown {
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdown {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+        background-color: white;
+        width: 100%;
+    }
+    
+    ul.topnav.responsive li {
+        display: inline; 
+        float: none;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+    
+
+    ul.topnav.responsive li.hiddenli a {
+        opacity: 0;
+        cursor: default;
+    }
+    
+    nav ul {
+    opacity: 0.75;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    }
+
+    ul.topnav li {
+    list-style: none;
+    float: left;
+    }
+
+    ul.topnav li a {
+    display: block;
     text-decoration: none;
+    min-height: 15px;
+    padding: 10px;
+    color: black;
+    }
+    
+    ul.topnav li a:hover {
+    color: #7aa3cc;
+    }
+    
+    a:hover {
+        color: blue;
+    }
+    
+    img.woman {
+        margin-top: -5em;
+    }
+
+    
 }
 
-#menuToggle
-{
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none;
-}
+/* end of mobile!!! */
 
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -8px;
-  left: -6px;
-  cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
 
-  -webkit-touch-callout: none;
-}
 
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background-color: #485058;
-  border-radius: 3px;
-  z-index: 2;
-  cursor: pointer;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: white;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background: #343d46;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
 
 
 .logo {
@@ -149,22 +152,23 @@ a:hover
     
 }
 
+.urmom {
+    padding-top: 13.5em;
+}
 img.woman {
     width: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
-
 
 h1 {
     font-size: 50px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    text-align: center;
     margin-bottom: 0.5em;
+    margin-top: 0px;
     font-weight: 700;
     color: #485058;
     font-family: 'Montserrat', sans-serif;
@@ -184,10 +188,6 @@ p {
     
 }
 
-
-.container {
-    padding-top: 6em;
-}
 
 img.linkedin {
     width: 50px;

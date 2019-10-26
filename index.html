@@ -11,11 +11,11 @@
     </head>
     
     <body>
-        <nav role="navigation">
+        
+        <!--<nav role="navigation">
   <div id="menuToggle">
     <input type="checkbox" />
     
-<!--    /* thesee are the hamburger menu*/   -->
       
     <span></span>
     <span></span>
@@ -28,7 +28,31 @@
     </ul>
   </div>
    <a href="index.html"><img src="logo.png" class="logo"></a>       
+</nav>-->
+<a href="index.html"><img src="devlogo.png" class="logo">
+<nav>
+    <ul class="topnav" id="dropclick">
+        <li class="hiddenli"><a href="#">Yo</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="port-about.html">About</a></li>
+        <li><a href="port-portfolio.html">Work</a></li>
+         <li class="dropdown"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        
+    </ul>
+
 </nav>
+
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropclick");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                    /*change topnav to topnav.responsive*/
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
         
 <section class="banner">
             <h1>Kathryn Kang</h1>
@@ -37,7 +61,7 @@
         </section>
         
 <section class="about">
-    <img src="dev.png">
+    <img src="dev.png" class="yo">
     <h3>A little about this website...</h3>
         <p>Welcome! This website is a little different in that it functions as a portfolio in itself, as I coded the whole thing from scratch (with HTML, CSS, and JavaScript). It also features some UX work that I've done, but in your typical portfolio form.</p>
         <p class="p2">The goal of all this is to ultimately become a product manager- I aim to show my technical knowledge along with an eye for a seamless user experience. Thank you so much for coming by!</p>
