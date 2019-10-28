@@ -60,11 +60,6 @@ ul.topnav li.dropdown {
 }
 
 
-
-
-
-
-
 .logo {
     width: 60px;
     padding: 0;
@@ -131,11 +126,6 @@ img.linkedin:hover {
     transition: 0.3s;
 }
 
-@media screen and (max-width: 768px) {
-    img.woman {
-        width: 50%;
-    }
-}
 
 /*############ Mobile ############## */
 @media screen and (max-width: 768px) {
@@ -210,6 +200,7 @@ img.linkedin:hover {
     
     img.woman {
         margin-top: -5em;
+        width: 50%;
         
     }
     
