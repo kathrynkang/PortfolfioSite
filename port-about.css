@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #f2f2f2;
+    background-color: #f7f7f7;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     max-width: 100%;
@@ -59,6 +59,83 @@ ul.topnav li.dropdown {
     font-size: 25px;
 }
 
+
+
+
+
+
+
+.logo {
+    width: 60px;
+    padding: 0;
+    display: block;
+    margin-right: 20px;
+    float: right;
+    
+}
+
+.urmom {
+    padding-top: 13.5em;
+}
+img.woman {
+    width: 100%;
+    max-width: 450px;
+    min-width: 250px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-top: -60px;
+}
+
+h1 {
+    font-size: 50px;
+    width: 90%;
+    display: block;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -60px;
+    font-weight: 700;
+    color: #485058;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    font-weight: 400;
+    line-height: 1.3;
+    font-size: 20px;
+    color: #485058;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+
+img.linkedin {
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+img.linkedin:hover {
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    img.woman {
+        width: 50%;
+    }
+}
 
 /*############ Mobile ############## */
 @media screen and (max-width: 768px) {
@@ -133,73 +210,15 @@ ul.topnav li.dropdown {
     
     img.woman {
         margin-top: -5em;
+        
+    }
+    
+    h1 {
+        margin-top: 0px;
+        text-align: center;
     }
 
     
 }
 
 /* end of mobile!!! */
-
-
-
-
-
-.logo {
-    width: 60px;
-    padding: 0;
-    display: block;
-    margin-right: 20px;
-    float: right;
-    
-}
-
-.urmom {
-    padding-top: 13.5em;
-}
-img.woman {
-    width: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2em;
-}
-
-h1 {
-    font-size: 50px;
-    display: block;
-    text-align: center;
-    margin-bottom: 0.5em;
-    margin-top: 0px;
-    font-weight: 700;
-    color: #485058;
-    font-family: 'Montserrat', sans-serif;
-}
-
-p {
-    display: block;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 700px;
-    font-weight: 400;
-    line-height: 1.3;
-    font-size: 20px;
-    color: #485058;
-    font-family: 'Work Sans', sans-serif;
-    
-}
-
-
-img.linkedin {
-    width: 50px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8em;
-    margin-bottom: 2em;
-}
-
-img.linkedin:hover {
-    opacity: 0.3;
-    transition: 0.3s;
-}

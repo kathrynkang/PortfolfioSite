@@ -2,7 +2,7 @@ body
 {
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #f7f7f7;
     font-family: 'Montserrat', sans-serif;
     max-width: 100%;
     overflow-x: hidden;
@@ -129,7 +129,7 @@ ul.topnav li.dropdown {
 
 
 .banner {
-    background-color: #f2f2f2;
+    background-color: #f7f7f7;
     padding-top: 10em;
     padding-bottom: 14em;
     width: 95%;
@@ -200,16 +200,13 @@ p {
     font-family: 'Work Sans', sans-serif;
 }
 
-.p2 {
-    padding-bottom: 100px;
-}
 
 img.linkedin {
     width: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
+    margin-top: 5em;
     padding-bottom: 2em;
 }
 
