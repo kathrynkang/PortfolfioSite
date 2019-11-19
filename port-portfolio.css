@@ -178,6 +178,8 @@ img {
     backface-visibility: hidden;
 }
 
+
+
 img:hover {
   opacity: 0.3;
 }
