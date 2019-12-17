@@ -68,6 +68,15 @@ iframe {
     margin-top: 40px;
 }
 
+img.pdf {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
 
 /*############ Mobile ############## */
 @media screen and (max-width: 768px) {
@@ -149,8 +158,13 @@ iframe {
     }
     
     iframe {
-        width: 75%;
+        display: none;
     }
+    
+    img.pdf {
+        display: block;
+    }
+     
 }
 
 /* end of mobile!!! */
