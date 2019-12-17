@@ -10,6 +10,7 @@ body
 
 img.logo {
     position: absolute;
+    width: 60px;
     margin-left: 20px;
     margin-top: 20px;
 }
@@ -56,6 +57,15 @@ ul li.hiddenli {
 ul.topnav li.dropdown {
     display: none;
     font-size: 25px;
+}
+
+iframe {
+    width: 700px;
+    height: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
 }
 
 
@@ -137,7 +147,11 @@ ul.topnav li.dropdown {
         width: 70%;
         height: auto;
     }
-  
+    
+    iframe {
+        width: 80%;
+        height: 500px;
+    }
 }
 
 /* end of mobile!!! */
@@ -226,13 +240,45 @@ h3 {
     opacity: 1;
 }
 
+.research {
+    padding-bottom: 2em;
+    padding-top: 1em;
+    background-color: #d6eaff;
+}
+
+h2.researchheader {
+    text-align: center;
+}
+
+
 img.linkedin {
     width: 50px;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
-    padding-bottom: 1em;
+    margin-top: 7em;
+    margin-bottom: -.5em;
+}
+
+h4 {
+    font-weight: 200;
+    font-size: 20px;
+    width: 90%;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #485058;
+}
+
+p.researchp {
+    width: 90%;
+    max-width: 600px;
+    font-size: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #485058;
 }
 
