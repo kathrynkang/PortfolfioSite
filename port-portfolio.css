@@ -59,6 +59,13 @@ ul.topnav li.dropdown {
     font-size: 25px;
 }
 
+img.code, img.ux {
+    width: 270px;
+    height: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 iframe {
     width: 700px;
     height: 800px;
@@ -155,6 +162,7 @@ img.pdf {
     img.code, img.ux {
         width: 70%;
         height: auto;
+        max-width: 350px;
     }
     
     iframe {
@@ -181,6 +189,7 @@ h1 {
     font-weight: 700;
     color: #485058;
 }
+
 
 .screenshots {
     width: 95%;
